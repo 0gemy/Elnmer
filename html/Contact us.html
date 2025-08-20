@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us </title>
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/style1.css">
+   
+  
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><img src="../image/logo (2).png" alt="logo">
+    <div class="tagline">النمير للدهانات البحرية وتشطيب المنازل</div>
+    </div>
+
+
+ <!-- Search Box -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="ابحث هنا...">
+    <button id="searchBtn"><i class="fa-solid fa-search"></i></button>
+  </div>
+
+    <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+  
+    
+  </header>
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <span class="close-btn">&times;</span>
+    <ul>
+      <li><a href="../index.html"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+      <li class="dropdown">
+        <a href="#"><i class="fa-solid fa-box"></i> الأقسام</a>
+        <ul class="dropdown_menu">
+           <li><a href="../html/prodacts.html">المنتجات</a></li>
+          <li><a href="../html/tools.html">الأدوات</a></li>
+          <li><a href="../html/tasteb.html">الأثاث والتشطيب</a></li>
+          <li><a href="../html/dehanat.html">الدهانات</a></li>
+          <li><a href="../html/sanfara.html">الصنفرة التركي</a></li>
+          <li><a href="../html/fawleng.html">فاولنج</a></li>
+          <li><a href="../html/mostalzamat.html">مستلزمات مراكب</a></li>
+          <li><a href="../html/ma3gon.html">معجون</a></li>
+        </ul>
+      </li>
+      <li><a href="Contact us.html"><i class="fa-solid fa-phone"></i> تواصل معنا</a></li>
+    </ul>
+  </nav>
+
+<section class="hero">
+  <img src="../image/img60.jpg" alt="دهانات النمير" class="hero-img">
+</section>
+
+<div class="hero-title">
+  <h1>أهلاً بك في النمير للدهانات</h1>
+  <p>تشطيب المنازل والدهانات البحرية بجودة عالية</p>
+ 
+</div>
+
+ 
+  
+  <!-- Cards -->
+  <section class="cards">
+    <div class="cardx">
+      <img src="../image/facebook.png" alt="">
+      <h3>موقعنا على الفيس بوك   </h3>
+       <a href="https://www.facebook.com/share/17619YSVJA/?mibextid=wwXIfr" class="btn">تواصل الأن  </a>
+    </div>
+    <div class="cardx">
+      <img src="../image/whatsapp.png" alt="">
+      <h3> للتواصل عبر الواتس اب </h3>
+       <a href="https://wa.me/2001062718718?text=" class="btn">تواصل الأن</a>
+    </div>
+    <div class="cardx">
+      <img src="../image/google-maps.png" alt="">
+      <h3> لمعرفة موقعنا من خلال الخرائط</h3>
+       <a href="https://maps.app.goo.gl/yKH6v8kVoSeQ5rgM8?g_st=ac" class="btn">اضغط للدخول </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>جميع الحقوق محفوظة © موقع النمير - 2025</p>
+    <p>تواصل معنا عبر:</p>
+    <a href="https://www.facebook.com/share/17619YSVJA/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+        <a href="https://maps.app.goo.gl/yKH6v8kVoSeQ5rgM8?g_st=ac" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://wa.me/2001062718718?text=" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+
+    // ده للسايدبار 
+    const menuToggle = document.querySelector(".menu-toggle");
+    const sidebar = document.querySelector(".sidebar");
+    const closeBtn = document.querySelector(".close-btn");
+
+    menuToggle.addEventListener("click", () => sidebar.classList.add("active"));
+    closeBtn.addEventListener("click", () => sidebar.classList.remove("active"));
+
+      document.addEventListener("click", (e) => {
+    if (
+      sidebar.classList.contains("active") &&    // لو السايدبار مفتوحة
+      !sidebar.contains(e.target) &&             // والكليك مش جوا السايدبار
+      !menuToggle.contains(e.target)             // ومش على زرار الفتح
+    ) {
+      sidebar.classList.remove("active");        // اقفلها
+    }
+  });
+
+ 
+ 
+  
+ 
+ </script>
+
+</body>
+</html>

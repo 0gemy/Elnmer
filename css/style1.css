@@ -271,7 +271,7 @@
 .btn {
   pointer-events: auto;
   border: none;
-  width: 80px; height: 44px;
+  width: 80px; height:60px;
   border-radius: 999px;
   display: grid; place-items: center;
   background: rgba(15, 23, 42, .6);
@@ -298,4 +298,5 @@
 /* إيقاف الحركة عند تفضيل تقليل الحركة */
 @media (prefers-reduced-motion: reduce){
   .track { transition: none; }
+
 }
